@@ -1,0 +1,160 @@
+.head{
+  width: 408px;
+  height: 175px;
+  left: -11px;
+  top: -31px;
+
+  }
+  .contenido{
+    background-color: white;
+  }
+  /* Title */
+  h1{
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  margin-left: 10%;
+  /* identical to box height, or 160% */
+  letter-spacing: 0.03em;
+
+  /* Grey - Dark */
+  color: #252B5C;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  .rounded-input {
+    border-radius: 10px;
+    --background: #F5F4F8;
+    padding: 10px;
+    height: 60px;
+    width: 40%;
+    --border: none;
+
+  }
+  .ancho{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .rounded-input ion-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .rounded-input ion-label {
+    padding-left: 40px;
+  }
+
+  @media (max-width: 767px) {
+    .rounded-input {
+      width: 100%;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-left: 10%;
+      margin-right: 10%;
+  }
+
+  .left-text {
+    text-align: left;
+    margin-right: auto;
+    font-size: 13px;
+    color: #1F4C6B;
+    letter-spacing: 0.03em;
+  }
+
+  .right-text {
+    text-align: right;
+    margin-left: auto;
+
+    font-size: 13px;
+    color: #1F4C6B;
+    letter-spacing: 0.03em;
+  }
+  .rectangle2{
+    position: absolute;
+    width: 278px;
+    height: 63px;
+
+    background: #8BC83F;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 19px;
+    text-align: center;
+    }
+    .rectangle2 button:hover {
+      transform: scale(1.2);
+    }
+    .centro{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .linea {
+      margin:0px 20px;
+      width:20%;
+      border-top:1px solid #999;
+      position: relative;
+      top:10px;
+      float:left;
+      }
+
+    .leyenda {
+      font-weight:bold;
+      float:left;
+     }
+     .buttons {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      font-size: 28px;
+      width: 115px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      background: #F5F4F8;
+
+      border-radius: 25px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+
+    }
+
+    .buttons a:hover {
+      transform: scale(1.2);
+    }
+    /* Register */
+
+    h4{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+
+    letter-spacing: 0.03em;
+
+    /* Grey - Medium */
+    color: #53587A;
+    }
+
+
+
+

@@ -1,0 +1,65 @@
+<meta name="color-scheme" content="light dark" />
+<ion-content class="contenido">
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="dark" shape="round" (click)="goBack()">
+      <ion-icon name="arrow-back" color="light"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <body>
+    <div class="head">
+      <img
+        src="https://lh3.googleusercontent.com/Ll6EIqXXMqzeahkFGoVQ101BzlgQXbXmhFUmWua3TvDgUXYz2OfBqlasrBqYv6m0s8BjVKZEezE73U0oR6kI0nFIwauaX10fhbUk7EXySg"
+      />
+    </div>
+    <h1>Iniciar <a>sesión</a></h1>
+    <br />
+    <div class="ancho">
+      <ion-input class="rounded-input" placeholder="Correo" type="email">
+        <ion-icon
+          name="envelope"
+          slot="start"
+          class="fa-sharp fa-regular fa-envelope"
+        >
+        </ion-icon>
+        <ion-label></ion-label>
+      </ion-input>
+    </div>
+    <br />
+    <br />
+    <div class="ancho">
+      <ion-input
+        class="rounded-input"
+        placeholder="Contraseña"
+        [type]="passwordType"
+      >
+        <ion-icon
+          name="envelope"
+          slot="start"
+          class="fa-sharp fa-solid fa-lock"
+        >
+        </ion-icon>
+
+        <ion-label></ion-label>
+      </ion-input>
+    </div>
+    <div class="container">
+      <p class="left-text">¿Olvidaste tu contraseña?</p>
+      <p class="right-text" (click)="hideShowPassword()">{{ eye }}</p>
+    </div>
+    <br /><br />
+    <div class="centro">
+      <button class="rectangle2">Iniciar sesión</button>
+    </div>
+    <br /><br /><br />
+    <div class="linea">&nbsp;</div>
+    <div class="leyenda">O inicia sesión con:</div>
+    <div class="linea">&nbsp;</div>
+    <br /><br /><br />
+    <section class="buttons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-google-plus"></a>
+    </section>
+    <br /><br />
+    <h4>No tienes una cuenta? <a> Registrate</a></h4>
+  </body>
+</ion-content>

@@ -1,20 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<meta name="color-scheme" content="light dark" />
+<ion-content class="contenido">
+  <body>
+<ion-grid>
+  <ion-row>
+    <ion-col><div class="rectangle"><img src="https://i.pinimg.com/474x/5f/1b/cd/5f1bcdc189f4c5cea99dbde7de6a333f.jpg"></div></ion-col>
+    <ion-col><div class="rectangle"><img src="https://pbs.twimg.com/profile_images/731113846040080384/jcL8anL4_400x400.jpg"></div></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col><div class="rectangle"><img src="https://img.olx.com.br/thumbs256x256/63/633352365378534.jpg"></div></ion-col>
+    <ion-col><div class="rectangle"><img src="https://i.pinimg.com/474x/c8/7a/87/c87a87a41e991302adb5a3e2a8272e2e.jpg"></div></ion-col>
+  </ion-row>
+</ion-grid>
+<h1>¿Listo para <a>explorar?</a></h1>
+<div class="centro">
+  <button class="rectangle2" (click)="goToPageLogin()">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+   <i class="fa-sharp fa-solid fa-envelope"></i> Continúa con tu correo
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+</button>
+</div>
+<br>
+<br><br><br><br><br><br><br><br><br>
+<div class="linea">&nbsp;</div>
+<div class="leyenda">O inicia sesión con:</div>
+<div class="linea">&nbsp;</div>
+
+
+
+  <br><br><br>
+      <section class="buttons">
+
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google-plus"></a>
+
+      </section>
+<br><br>
+<h4>No tienes una cuenta? <a (click)="goRegister()">
+  Registrate</a></h4>
+</body>
 </ion-content>
