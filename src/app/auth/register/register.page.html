@@ -5,61 +5,48 @@
       <ion-icon name="arrow-back" color="light"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-  <body>
-    <br><br><br><br>
-   <h1>Crea una <a>Cuenta</a></h1>
-   <h4>Recuerda utilizar un correo <a>
-    Real</a></h4>
+  <br><br><br><br>
+  <h1>Crea una <a>Cuenta</a></h1>
+  <h4>Recuerda utilizar un correo <a>real</a></h4>
   <br><br>
- <div class="ancho">
-  <ion-input class="rounded-input" placeholder="Nombre completo" type="email">
-    <ion-icon name="envelope" slot="start" class="fa-sharp fa-regular fa-user"> </ion-icon>
-    <ion-label ></ion-label>
-  </ion-input>
-
-</div>
-<br>
-<br>
-<div class="ancho">
-  <ion-input class="rounded-input" placeholder="Correo" type="email">
-    <ion-icon name="envelope" slot="start" class="fa-sharp fa-regular fa-envelope"> </ion-icon>
-    <ion-label ></ion-label>
-  </ion-input>
-
-</div>
-<br>
-<br>
-<div class="ancho">
-  <ion-input class="rounded-input" placeholder="Contraseña" [type]="passwordType">
-    <ion-icon name="envelope" slot="start" class="fa-sharp fa-solid fa-lock"> </ion-icon>
-
-    <ion-label ></ion-label>
-  </ion-input>
-
-</div>
-<div class="container">
-
-  <p class="right-text" (click)="hideShowPassword()">{{ eye }}</p>
-</div>
-<br><br>
-<div class="centro">
-  <button class="rectangle2">
-  Registrate
-</button>
-</div>
-<br><br><br>
-<div class="linea">&nbsp;</div>
-<div class="leyenda">O inicia sesión con:</div>
-<div class="linea">&nbsp;</div>
-<br><br><br>
-      <section class="buttons">
-
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-google-plus"></a>
-
-      </section>
-<br><br>
-
-</body>
+  <form [formGroup]="registerForm">
+    <div class="ancho">
+      <ion-input class="rounded-input" formControlName="name" placeholder="Nombre completo" type="text">
+        <ion-icon name="person" slot="start" class="fa-sharp fa-regular fa-user"></ion-icon>
+        <ion-label></ion-label>
+      </ion-input>
+    </div>
+    <br><br>
+    <div class="ancho">
+      <ion-input class="rounded-input" formControlName="email" placeholder="Correo" type="email">
+        <ion-icon name="mail" slot="start" class="fa-sharp fa-regular fa-envelope"></ion-icon>
+        <ion-label></ion-label>
+      </ion-input>
+    </div>
+    <br><br>
+    <div class="ancho">
+      <ion-input class="rounded-input" formControlName="password" placeholder="Contraseña" [type]="passwordType">
+        <ion-icon name="lock" slot="start" class="fa-sharp fa-solid fa-lock"></ion-icon>
+        <ion-label></ion-label>
+      </ion-input>
+    </div>
+  </form>
+  <div class="container">
+    <p class="right-text" (click)="hideShowPassword()">{{ eye }}</p>
+  </div>
+  <br><br>
+  <div class="centro">
+    <button class="rectangle2" (click)="onSubmit()">
+      Registrate
+    </button>
+  </div>
+  <br><br><br>
+  <div class="linea">&nbsp;</div>
+  <div class="leyenda">O inicia sesión con:</div>
+  <div class="linea">&nbsp;</div>
+  <br /><br /><br />
+  <section class="buttons">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-google-plus"></a>
+  </section>
 </ion-content>
-

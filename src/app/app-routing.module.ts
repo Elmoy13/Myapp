@@ -37,6 +37,10 @@ const routes: Routes = [
     redirectTo: 'forgot-password',
     pathMatch: 'full'
   },
+  {
+    path: 'code-auth',
+    loadChildren: () => import('./auth/code-auth/code-auth.module').then( m => m.CodeAuthPageModule)
+  },
 ];
 
 @NgModule({
